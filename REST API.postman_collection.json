@@ -1,0 +1,175 @@
+{
+  "info": {
+    "_postman_id": "f4312e28-4a65-4864-97ae-1428f8deb682",
+    "name": "REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /ressources",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /ressources/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /ressources/search/findByNomContains?nom=:name",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources/search/findByNomContains?nom=R1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources", "search", "findByNomContains"],
+          "query": [
+            {
+              "key": "nom",
+              "value": "R1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /ressources",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"nom\": \"XYZ\",\n\t\"dateAchat\": \"2018-12-25\",\n\t\"prix\": 99,\n\t\"note\": 10\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /ressources",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"dateAchat\": \"2010-01-01\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT /ressources",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"dateAchat\": \"2010-01-01\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /ressources",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/ressources/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ressources", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
